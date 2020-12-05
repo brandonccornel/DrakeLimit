@@ -139,15 +139,3 @@ def lambda_handler(event, context):
     except Exception as e:
         print(e)
         raise e
-
-
-'''
-1607015846515
-DrakeLimit  aws lambda update-function-code --function-name DrakeLimiter --zip-file fileb://my-deployment-package.zip
-➜  DrakeLimit  zip -g my-deployment-package.zip .cache-omgoshbrandon@gmail.com                                          
-updating: .cache-omgoshbrandon@gmail.com (deflated 20%)
-➜  DrakeLimit  zip -g my-deployment-package.zip lambda_function.py                                                      
-updating: lambda_function.py (deflated 68%)
-➜  DrakeLimit  aws lambda update-function-code --function-name DrakeLimiter --zip-file fileb://my-deployment-package.zip
-➜  DrakeLimit  
-'''
